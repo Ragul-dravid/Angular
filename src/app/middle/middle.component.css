@@ -1,0 +1,40 @@
+.middle_section
+{
+    margin: 0px;
+}
+.container
+{
+    width: 100%;
+}
+/* Mat-Table */
+.tableScroll
+{
+    width: 300px;
+    height: 800px;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    position: sticky;
+}
+.thead
+{
+    position: sticky !important;
+    z-index: 1;
+    top: 0px;
+    left: 0px;
+    background-color: aquamarine !important;
+    color: black;
+}
+.thead:first-child
+{
+    position: sticky !important;
+    z-index: 2;
+    top: 0px;
+    left: 0px;
+    background-color: aquamarine !important;
+    color: black;
+}
+.tdataPositions
+{
+    position: sticky !important;
+    left: 0px;
+}

@@ -1,0 +1,91 @@
+<h1 class="text-center text-warning">Angular Project-4</h1>
+<!-- <mat-progress-bar mode="indeterminate" id="progress_bar"></mat-progress-bar> -->
+<div  *ngIf="show" id="loader-line"></div>
+
+<header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-primary">
+        <div class="container-fluid" id="divNav">
+          <a class="navbar-brand ps-4" href="#">
+            <!-- icon  -->
+            <img src="assets/cloudlogo.png" id="ecs-icon" alt="ecs icon">
+            <span id="crm">CRM</span>
+          </a>
+          <!--  menu-icon -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 pe-3">
+              <li class="nav-item p-3">
+                <a class="nav-link" (click)="toggle()" [routerLinkActive]="'active'" aria-current="page" [routerLink]="['home']">Home</a>
+              </li>
+              <li class="nav-item p-3">
+                <a class="nav-link" (click)="toggle()"  [routerLinkActive]="'active'" [routerLink]="['about']">About</a>
+              </li>
+              <li class="nav-item p-3">
+                <a class="nav-link" (click)="toggle()" [routerLinkActive]="'active'"[routerLink]="['contact']">Contact</a>
+              </li>
+              <li class="nav-item p-3">
+                <a class="nav-link" (click)="toggle()" [routerLinkActive]="'active'" [routerLink]="['login']">Login</a>
+              </li>
+              <li class="nav-item p-3">
+                <a class="nav-link" (click)="toggle()"  [routerLinkActive]="'active'">Menu</a>
+              </li>
+              <li class="nav-item p-3">
+                <a class="nav-link" (click)="toggle()"  [routerLinkActive]="'active'">View</a>
+              </li>
+              <li class="nav-item p-3">
+                <a class="nav-link" (click)="toggle()"  [routerLinkActive]="'active'">Run</a>
+              </li>
+              <li class="nav-item p-3">
+                <a class="nav-link" (click)="toggle()"  [routerLinkActive]="'active'">Reset</a>
+              </li>
+              <li class="nav-item p-3">
+                <a class="nav-link" (click)="toggle()"  [routerLinkActive]="'active'">Edit</a>
+              </li>
+              <li class="nav-item p-3">
+                <a class="nav-link" (click)="toggle()"  [routerLinkActive]="'active'">Tools</a>
+              </li>
+              <li class="nav-item p-3">
+                <a class="nav-link" (click)="toggle()"  [routerLinkActive]="'active'">Select</a>
+              </li>
+              <li class="nav-item p-3">
+                <a class="nav-link" (click)="toggle()"  [routerLinkActive]="'active'">Select All</a>
+              </li>
+              <li class="nav-item p-3">
+                <a class="nav-link" (click)="toggle()"  [routerLinkActive]="'active'">Search</a>
+              </li>
+              <li class="nav-item p-3">
+                <a class="nav-link" (click)="toggle()"  [routerLinkActive]="'active'">Edit</a>
+              </li>
+              <li class="nav-item p-3">
+                <a class="nav-link" (click)="toggle()"  [routerLinkActive]="'active'" href="#">Back</a>
+              </li>
+              <li class="nav-item p-3">
+                <a class="nav-link" (click)="toggle()"  [routerLinkActive]="'active'" href="#"></a>
+              </li>
+
+              <li class="nav-item dropdown p-3">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" (click)="toggle()"  [routerLinkActive]="'active'" aria-expanded="false" style="font-size: 25px;margin-bottom: 3px;">
+                  ...
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item p-3" (click)="toggle()" href="#">Save</a></li>
+                  <li><a class="dropdown-item p-3" (click)="toggle()" href="#">Save All</a></li>
+                  <li><a class="dropdown-item p-3" (click)="toggle()" href="#">Open</a></li>
+                  <li><a class="dropdown-item p-3" (click)="toggle()" href="#">Undo</a></li>
+                  <li><a class="dropdown-item p-3" (click)="toggle()" href="#">Redo</a></li>
+                  <li><a class="dropdown-item p-3" (click)="toggle()" href="#">Zoom++</a></li>
+                  <li><a class="dropdown-item p-3" (click)="toggle()" href="#">Zoo--</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item p-3" (click)="toggle()" href="#">Exit</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+</header>
+
+<router-outlet></router-outlet>

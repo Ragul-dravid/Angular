@@ -1,0 +1,17 @@
+<section style="width: 100%;">
+    <button class="btn btn-warning px-3" (click)="leftToggle()">left</button>
+    <div class="row" style="height: 100vh; justify-content: space-around;"> 
+        <div class="col-sm-2 left_component"  *ngIf="show" id="left">
+            <app-left id="left-component"></app-left>
+        </div>
+
+        <div class="col-sm-7 middle_component" id="middle">
+            <app-middle></app-middle>
+        </div>
+
+        <div class="col-sm-3 right_component" id="right">
+            <app-right></app-right>
+        </div>
+
+    </div>
+</section>
